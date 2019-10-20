@@ -57,6 +57,14 @@ db.sequelize.sync(syncOptions).then(function(f) {
       PORT
     );
   });
+
+
 });
 
 module.exports = app;
+
+app.listen(process.env.PORT || 8080, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
+
+

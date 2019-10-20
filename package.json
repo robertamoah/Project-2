@@ -2,7 +2,7 @@
   "name": "project-2",
   "version": "1.0.0",
   "description": "",
-  "main": "orm.js",
+  "main": "node server.js",
   "engines": {
     "npm": "6.9.0",
     "node": "10.16.3"
