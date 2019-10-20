@@ -3,7 +3,7 @@ var express = require("express");
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8000;
 
 
 
@@ -24,6 +24,9 @@ Handlebars.registerHelper("inc", function(value, options)
     return parseInt(value) + 1;
 });
 
+
+
+
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
@@ -34,6 +37,11 @@ var syncOptions = { force: false };
 if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
+
+
+app.get('/', function(req, res, next){
+  res.sendStatus(200);
+});
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function(f) {
