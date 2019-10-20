@@ -1,5 +1,5 @@
 {
-  "name": "new-project-2",
+  "name": "Project-2",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -29,5 +29,6 @@
     "node": "12.11.1",
     "nodemailer": "^6.3.1",
     "sequelize": "^5.19.4"
-  }
+  },
+  "devDependencies": {}
 }
