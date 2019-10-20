@@ -5,7 +5,7 @@
   "main": "node server.js",
   "engines": {
     "npm": "6.9.0",
-    "node": "10.16.3"
+    "node": "8.16.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
