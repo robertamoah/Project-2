@@ -48,6 +48,13 @@ if (process.env.NODE_ENV === "development") {
 
 
 
+if (process.env.NODE_ENV === "production") {
+  syncOptions.force = true;
+
+  app.get("/", (req, res) => res.render("login",{}))
+}
+
+
 
 
 
