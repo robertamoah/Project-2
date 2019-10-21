@@ -1,11 +1,12 @@
 {
   "development": {
-    "use_env_variable": "JAWSDB_URL",
     "username": "jqgq5t2vgk2acixd",
     "password": "fk6631j8m2vxw4dm",
     "database": "okabfhx1kd1klvys",
     "host": "o677vxfi8ok6exrd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "use_env_variable": "JAWSDB_URL"
+
   },
   "test": {
     "username": "root",
@@ -15,11 +16,13 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "password",
-    "database": "bucket_besties_db",
-    "host": "localhost",
+    "use_env_variable": "JAWSDB_URL",
+    "username": "jqgq5t2vgk2acixd",
+    "password": "fk6631j8m2vxw4dm",
+    "database": "okabfhx1kd1klvys",
+    "host": "o677vxfi8ok6exrd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
+    
   }
 }
 
