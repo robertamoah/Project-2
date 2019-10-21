@@ -1,34 +1,36 @@
 {
-  "name": "Project-2",
+  "name": "project-2",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "node server.js",
+  "engines": {
+    "npm": "6.12.0",
+    "node": "10.16.3"
+  },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsosnicki647/new-project-2.git"
+    "url": "git+https://github.com/robertamoah/Project-2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jsosnicki647/new-project-2/issues"
+    "url": "https://github.com/robertamoah/Project-2/issues"
   },
-  "homepage": "https://github.com/jsosnicki647/new-project-2#readme",
+  "homepage": "https://github.com/robertamoah/Project-2#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "handlebars": "^4.4.3",
-    "moment": "^2.24.0",
     "mysql": "^2.17.1",
     "mysql2": "^1.7.0",
-    "node": "12.11.1",
     "nodemailer": "^6.3.1",
-    "sequelize": "^5.19.4"
-  },
-  "devDependencies": {}
+    "npm": "^6.12.0",
+    "sequelize": "^5.21.1"
+  }
 }
